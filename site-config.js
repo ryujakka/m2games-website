@@ -29,5 +29,6 @@ window.SITE_CONFIG = {
   "businessName": "프로젝트 엠투 스튜디오",
   "representative": "유영찬",
   "businessNumber": "579-20-01992",
-  "businessCategories": "유선온라인 게임 소프트웨어 개발 및 공급업 / 기타 게임 소프트웨어 개발 및 공급업 / 응용 소프트웨어 개발 및 공급"
+  "businessCategories": "유선온라인 게임 소프트웨어 개발 및 공급업 / 기타 게임 소프트웨어 개발 및 공급업 / 응용 소프트웨어 개발 및 공급",
+  "heroMedia": "assets/hero.svg"
 };
