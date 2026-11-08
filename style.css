@@ -41,3 +41,48 @@ body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(elli
 
 /* v4.1: never show the parchment introduction on narrow smartphones. */
 @media (max-width:767px){.scroll-intro{display:none!important}}
+
+/* v4.2 — reference-inspired actual parchment; all site content lives inside it. */
+@media(min-width:768px){
+ body:has(.hanji-scroll){background:#191b1d radial-gradient(ellipse at 50% 20%,#303030 0%,#121416 78%);}
+ .hanji-scroll{max-width:1370px;width:calc(100% - 58px);margin:30px auto 65px;filter:drop-shadow(0 20px 28px #0009);}
+ .scroll-paper{margin:0 23px;background-color:#d9bd8b;background-image:linear-gradient(90deg,#6f492e3d 0%,transparent 5%,transparent 95%,#6f492e3d 100%),url('assets/hanji-reference.webp');background-size:100% 100%,1100px 680px;background-repeat:no-repeat,repeat;border-left:4px solid #8c633e;border-right:4px solid #8c633e;box-shadow:inset 14px 0 24px #55341d32,inset -14px 0 24px #55341d32;}
+ .scroll-paper:before,.scroll-paper:after{width:8px;background:linear-gradient(90deg,#79533377,#d2ac7355);}
+ .scroll-roller{height:51px;margin:0;border:0;border-radius:10px;background:#8a5d37 url('assets/wood-roller.webp') center/100% 100% no-repeat;box-shadow:0 4px 11px #0008;}
+ .scroll-roller:before,.scroll-roller:after{top:-7px;bottom:-7px;width:28px;border:2px solid #55341e;border-radius:12px;background:linear-gradient(90deg,#342114,#c49a59 28%,#6e4225 62%,#27180f);box-shadow:inset 3px 0 4px #f0c77c66;}
+ .scroll-roller:before{left:-10px}.scroll-roller:after{right:-10px}
+ .hanji-scroll header{background:#e4c99733;}
+ .hanji-scroll .hero-v3{background:#e5d4b820;}
+ .hanji-scroll .card,.hanji-scroll .event{background:#f8e5c540;}
+ .hanji-scroll.scroll-opening .scroll-paper{animation:realScrollReveal 1.5s cubic-bezier(.16,.7,.2,1) both;}
+ .hanji-scroll.scroll-opening .scroll-roller-bottom{animation:realScrollBottom 1.5s cubic-bezier(.16,.7,.2,1) both;}
+ @keyframes realScrollReveal{from{clip-path:inset(0 0 100% 0);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
+ @keyframes realScrollBottom{from{opacity:0}70%{opacity:0}to{opacity:1}}
+}
+@media (prefers-reduced-motion:reduce){.hanji-scroll.scroll-opening .scroll-paper,.hanji-scroll.scroll-opening .scroll-roller-bottom{animation:none!important}}
+@media(max-width:767px){.hanji-scroll{display:contents}.scroll-paper{display:contents}.scroll-roller{display:none}}
+
+
+/* v5: original generated scroll artwork, integrated live site; PC/tablet only. */
+@media(min-width:768px){
+ body:has(.hanji-scroll){background:#17191b radial-gradient(ellipse at 50% 18%,#373634,#151719 78%);}
+ .hanji-scroll{width:calc(100% - 56px);max-width:1220px;margin:28px auto 62px;filter:drop-shadow(0 20px 35px #000a);animation:scrollPageArrive 950ms cubic-bezier(.18,.7,.25,1) both;}
+ .scroll-paper{margin:0 46px;position:relative;background-color:#dcb988;background-image:linear-gradient(90deg,#74512e33,transparent 10%,transparent 90%,#74512e33),url('assets/scroll-hanji-texture.webp');background-size:100% 100%,645px 860px;background-repeat:no-repeat,repeat;border:0;box-shadow:inset 0 0 40px #6b47283b;}
+ .scroll-paper:before,.scroll-paper:after{content:'';z-index:0;position:absolute;top:0;bottom:0;width:43px;opacity:.9;pointer-events:none;background-repeat:repeat-y;background-size:100% 930px;}
+ .scroll-paper:before{left:-19px;background-image:url('assets/scroll-left-edge.webp')}
+ .scroll-paper:after{right:-19px;background-image:url('assets/scroll-right-edge.webp')}
+ .scroll-paper>header,.scroll-paper>main,.scroll-paper>footer{position:relative;z-index:1}
+ .scroll-roller{height:91px;margin:0 -6px;border:0;border-radius:0;background:transparent center / 100% 100% no-repeat;box-shadow:none;z-index:3;}
+ .scroll-roller-top{background-image:url('assets/scroll-top-original.webp');margin-bottom:-16px}
+ .scroll-roller-bottom{background-image:url('assets/scroll-bottom-original.webp');margin-top:-16px}
+ .scroll-roller:before,.scroll-roller:after{display:none}
+ .hanji-scroll header{background:transparent;border-bottom:1px solid #89694455}
+ .hanji-scroll .nav{padding-top:23px;padding-bottom:20px}
+ .hanji-scroll .hero-v3{background:transparent}
+ .hanji-scroll .card,.hanji-scroll .event{background:#fff1d02b}
+ .hanji-scroll.scroll-opening .scroll-paper,.hanji-scroll.scroll-opening .scroll-roller-bottom{animation:none!important;clip-path:none!important;opacity:1!important}
+ @keyframes scrollPageArrive{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(min-width:768px) and (max-width:1023px){.scroll-paper{margin:0 31px}.scroll-roller{height:65px}.scroll-paper:before,.scroll-paper:after{width:27px}.scroll-paper:before{left:-12px}.scroll-paper:after{right:-12px}}
+@media(max-width:767px){.hanji-scroll{animation:none!important}.scroll-paper{background:none!important;box-shadow:none!important}.scroll-paper:before,.scroll-paper:after{display:none!important}}
+@media(prefers-reduced-motion:reduce){.hanji-scroll{animation:none!important}}
