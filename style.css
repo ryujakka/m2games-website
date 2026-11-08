@@ -86,3 +86,23 @@ body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(elli
 @media(min-width:768px) and (max-width:1023px){.scroll-paper{margin:0 31px}.scroll-roller{height:65px}.scroll-paper:before,.scroll-paper:after{width:27px}.scroll-paper:before{left:-12px}.scroll-paper:after{right:-12px}}
 @media(max-width:767px){.hanji-scroll{animation:none!important}.scroll-paper{background:none!important;box-shadow:none!important}.scroll-paper:before,.scroll-paper:after{display:none!important}}
 @media(prefers-reduced-motion:reduce){.hanji-scroll{animation:none!important}}
+
+/* v5.1 — matching transparent rollers, proportional paper width */
+@media (min-width:768px) {
+  .hanji-scroll {max-width:1220px;}
+  .scroll-paper {margin-left:29px; margin-right:29px;}
+  .scroll-roller {
+    width:100%; height:auto; aspect-ratio:994 / 99;
+    margin-left:0; margin-right:0;
+    background-image:url('assets/scroll-roller-clean.png') !important;
+    background-size:100% 100%; background-color:transparent !important;
+    box-shadow:none !important; border:0;
+  }
+  .scroll-roller-top {transform:rotate(180deg);margin-bottom:-20px;}
+  .scroll-roller-bottom {transform:none;margin-top:-20px;}
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .scroll-paper {margin-left:22px; margin-right:22px;}
+  .scroll-roller-top {margin-bottom:-12px;}
+  .scroll-roller-bottom {margin-top:-12px;}
+}
