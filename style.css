@@ -118,3 +118,41 @@ body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(elli
     background-size:100% 100% !important;
   }
 }
+
+/* v5.4: accessible grouped dropdown, readable hanji typography, lacquer Steam CTA */
+.nav{position:relative;min-height:82px;gap:18px}
+.nav-menu-wrap{position:relative;flex-shrink:0}
+.menu-trigger{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:45px;padding:9px 18px;border:1px solid #94734c;border-radius:5px;background:#251b16;color:#f3dfb6;font-weight:750;font-size:15px;letter-spacing:.02em;box-shadow:inset 0 1px #fff2,0 3px 8px #0003}
+.menu-trigger:hover,.menu-trigger:focus-visible{background:#402b20;outline:2px solid #c7a16b;outline-offset:2px}
+.menu-icon{font-size:20px;line-height:1}
+.menu-panel{position:absolute;right:0;top:calc(100% + 11px);width:min(680px,calc(100vw - 44px));z-index:60;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:23px;border:1px solid #a68151;border-radius:7px;background:#e4c99a url('assets/scroll-hanji-texture.webp') center/480px auto;box-shadow:0 16px 38px #0008;color:#35261c}
+.menu-panel[hidden]{display:none!important}
+.menu-group{display:flex;flex-direction:column;gap:7px;min-width:0}
+.menu-group strong{font-size:15px;padding-bottom:8px;border-bottom:1px solid #9d7a51;color:#4b2b1d}
+.menu-group a{font-size:15px;line-height:1.4;padding:6px 5px;border-radius:3px;color:#3c3024}
+.menu-group a:hover,.menu-group a:focus-visible,.menu-group a.active{background:#583a25;color:#fff0cf}
+.hanji-scroll .brand{font-size:clamp(17px,1.55vw,22px);letter-spacing:1.2px}
+@media(min-width:768px){
+ .hanji-scroll{--hanji-ink:#33251a}
+ .hanji-scroll .hero-game-description{font-size:clamp(21px,1.85vw,27px);line-height:1.7;color:var(--hanji-ink)}
+ .hanji-scroll .hero-studio-line{font-size:16px;color:#574331}
+ .hanji-scroll .eyebrow{font-size:14px;letter-spacing:2px}
+ .hanji-scroll .container p,.hanji-scroll .card p,.hanji-scroll .event p{font-size:clamp(16px,1.2vw,19px);line-height:1.8}
+ .hanji-scroll .nav{padding:17px 26px}
+ .hanji-scroll .btn{font-size:16px;min-height:48px;padding:11px 19px}
+}
+.steam-lacquer,.hanji-scroll .steam-lacquer{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:11px 24px;border:2px solid #bda577;border-radius:5px;color:#f7e9c9!important;font-size:16px;font-weight:800;letter-spacing:.025em;text-shadow:0 1px 2px #000;background:radial-gradient(ellipse at 13% 22%,#7f8b8a55 0 2%,transparent 3%),radial-gradient(ellipse at 88% 75%,#8ba8a755 0 2%,transparent 3%),linear-gradient(125deg,#06090d,#1c2027 48%,#07090e 80%);box-shadow:inset 0 0 0 2px #131719,inset 0 1px 11px #8d9fa52b,0 4px 9px #2a160d55;text-decoration:none}
+.steam-lacquer:before{content:'';position:absolute;inset:5px;pointer-events:none;border:1px solid #b0b9b680;border-radius:2px;background:linear-gradient(125deg,transparent 30%,#e1f1ec14 45%,transparent 60%)}
+.steam-lacquer:after{content:'✦';position:relative;margin-left:12px;color:#d4e4df;text-shadow:1px 0 #9d7b91,-1px 0 #a4d8d6}
+.steam-lacquer:hover{filter:brightness(1.2);border-color:#d7c9a5;transform:translateY(-1px)}
+.steam-pending{opacity:.8;cursor:default}
+.steam-pending:hover{filter:none;transform:none}
+@media(max-width:767px){
+ .nav{min-height:65px;padding:12px 18px}
+ .menu-trigger{font-size:14px;min-height:42px;padding:7px 11px}
+ .menu-panel{width:min(92vw,400px);grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;background:#151c24;border-color:#55606b;color:#f1eee8}
+ .menu-group strong{color:#e0bd8b;border-color:#59616a}
+ .menu-group a{color:#e3e4e4}
+ .menu-group a:hover,.menu-group a:focus-visible,.menu-group a.active{background:#755637;color:#fff}
+}
+@media(max-width:420px){.brand{font-size:12px;letter-spacing:0}.brand img{height:27px;margin-right:5px}.menu-trigger span:nth-child(2){display:none}.menu-panel{width:calc(100vw - 24px);right:-6px}}
