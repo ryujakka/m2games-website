@@ -12,7 +12,9 @@ window.SITE_CONFIG = {
   "gameLogo": "assets/game-logo.svg",
   "heroImage": "assets/hero-clean.svg",
   "heroSlides": [
-    {"type":"image","src":"assets/hero-clean.svg"}
+    {"type":"image","src":"assets/screen-1.svg"},
+    {"type":"image","src":"assets/screen-2.svg"},
+    {"type":"image","src":"assets/screen-3.svg"}
   ],
   "heroPoster": "assets/hero-clean.svg",
   "heroAutoRotate": true,
