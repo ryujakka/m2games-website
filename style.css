@@ -106,3 +106,15 @@ body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(elli
   .scroll-roller-top {margin-bottom:-12px;}
   .scroll-roller-bottom {margin-top:-12px;}
 }
+
+/* v5.3: extend wooden rollers to cover the entire paper width.
+   Only desktop/tablet; keep parchment and its content dimensions unchanged. */
+@media (min-width:768px) {
+  .hanji-scroll {overflow:visible;}
+  .hanji-scroll .scroll-roller {
+    width:132% !important;
+    margin-left:-16% !important;
+    margin-right:0 !important;
+    background-size:100% 100% !important;
+  }
+}
