@@ -166,3 +166,17 @@ body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(elli
 .hanji-scroll .hero-actions .btn.alt {background:#38271d!important;color:#f7e5c7!important;border:1px solid #94764f!important;box-shadow:0 3px 8px #30190d44;}
 .hanji-scroll .hero-actions .btn.alt:hover,.hanji-scroll .hero-actions .btn.alt:focus-visible {background:#583a27!important;color:#fff5df!important;}
 @media(max-width:767px){.menu-panel,.hanji-scroll .menu-panel{background:#17202a!important;color:#f3eee4!important;border-color:#5a6570!important;}.hanji-scroll .menu-group a{color:#f3eee4!important;}.hanji-scroll .menu-group strong{color:#e4bd87!important;}}
+
+/* v5.6 — wide hero slideshow, title and actions below it */
+.hero-v3-inner{display:flex;flex-direction:column;gap:0;max-width:1370px;align-items:stretch}
+.hero-v3{padding:0 0 46px}
+.hero-v3 .hero-media{width:100%;aspect-ratio:16/7;max-width:none;border-radius:0;border-left:0;border-right:0}
+.hero-v3 .hero-info{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;padding:35px clamp(16px,4vw,70px) 0}
+.hero-v3 .hero-info .eyebrow{order:0}
+.hero-v3 .hero-game-logo{order:1;width:min(850px,94%);max-width:94%;max-height:310px;object-fit:contain;object-position:center;margin:20px auto 10px}
+.hero-v3 .hero-game-description{order:2;max-width:950px;margin:12px auto 18px;text-wrap:balance}
+.hero-v3 .hero-actions{order:3;justify-content:center;align-items:center;margin-top:12px;gap:16px}
+.hero-v3 .hero-trailer{order:4}
+.hero-v3 .hero-studio-line{order:5;margin-top:27px}
+@media(min-width:768px){.hanji-scroll .hero-v3{padding:0 0 48px}.hanji-scroll .hero-media{border-radius:0}.hanji-scroll .hero-info{padding-top:34px}}
+@media(max-width:767px){.hero-v3{padding:0 0 32px}.hero-v3 .hero-media{aspect-ratio:16/9;border-radius:0}.hero-v3 .hero-info{padding:24px 18px 0}.hero-v3 .hero-game-logo{width:min(95%,560px);max-height:180px}.hero-v3 .hero-game-description{font-size:18px}.hero-v3 .hero-actions{gap:9px}}
