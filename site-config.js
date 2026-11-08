@@ -8,9 +8,15 @@ window.SITE_CONFIG = {
   "steamUrl": "",
   "trailerUrl": "",
   "contactEmail": "m2club@m2games.kr",
-  "logo": "assets/studio-logo.svg",
+  "logo": "assets/m2-logo-transparent.png",
   "gameLogo": "assets/game-logo.svg",
-  "heroImage": "assets/hero.svg",
+  "heroImage": "assets/hero-clean.svg",
+  "heroSlides": [
+    {"type":"image","src":"assets/hero-clean.svg"}
+  ],
+  "heroPoster": "assets/hero-clean.svg",
+  "heroAutoRotate": true,
+  "heroSlideSeconds": 7,
   "gameImage": "assets/game-cover.svg",
   "gallery": [
     "assets/screen-1.svg",
