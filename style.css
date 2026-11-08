@@ -4,3 +4,40 @@
 
 /* Official M2 identity */
 .brand{display:inline-flex;align-items:center;gap:12px}.brand img{height:43px;width:43px;max-width:none;object-fit:contain;margin:0}.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:12px;color:#f0eee8;letter-spacing:1px}.footer-brand img{width:46px;height:46px;object-fit:contain}@media(max-width:850px){.brand img{height:36px;width:36px}.brand{font-size:14px;letter-spacing:1px}}
+
+/* v4 — Full-site Joseon hanji scroll. Public pages only; admin remains unchanged. */
+body:has(.hanji-scroll){background:#10151a;background-image:radial-gradient(ellipse at 50% 5%,#343b3c 0%,transparent 55%),repeating-linear-gradient(115deg,transparent 0 90px,#ffffff04 91px 92px);color:#382b20}
+.hanji-scroll{position:relative;max-width:1320px;width:calc(100% - 90px);margin:34px auto 65px;filter:drop-shadow(0 20px 35px #000a)}
+.scroll-paper{position:relative;isolation:isolate;margin:0 17px;padding:0 0 5px;background-color:#decdab;background-image:linear-gradient(90deg,#92734c55 0%,#f2e5c644 5%,transparent 16%,transparent 85%,#7a583c40 100%),url('assets/hanji-paper.webp');background-size:100% 100%,720px 960px;border-left:1px solid #a68a64;border-right:1px solid #a68a64;box-shadow:inset 12px 0 25px #5a3d2522,inset -12px 0 25px #5a3d2529}
+.scroll-paper:before,.scroll-paper:after{content:'';position:absolute;z-index:-1;top:0;bottom:0;width:12px;background:repeating-linear-gradient(180deg,#b89c6a44 0 3px,#f2e4c511 4px 11px);opacity:.65}.scroll-paper:before{left:0}.scroll-paper:after{right:0}
+.scroll-roller{position:relative;height:32px;margin:0 -4px;border-radius:18px;background:linear-gradient(180deg,#2a1b13 0%,#805937 20%,#c29963 45%,#624126 76%,#24180f 100%);border:2px solid #3c291c;box-shadow:0 5px 12px #0008;z-index:5}
+.scroll-roller:before,.scroll-roller:after{content:'';position:absolute;top:3px;bottom:3px;width:22px;border-radius:6px;background:linear-gradient(90deg,#241810,#a77b46,#3d2617);border:1px solid #3b2616}.scroll-roller:before{left:-10px}.scroll-roller:after{right:-10px}
+.hanji-scroll header{position:relative;top:auto;background:#e3d2b9aa;backdrop-filter:none;border-bottom:1px solid #957b5870}
+.hanji-scroll .brand,.hanji-scroll .links a,.hanji-scroll .mobile-toggle{color:#3e3023}
+.hanji-scroll .links a:hover,.hanji-scroll .links .active,.hanji-scroll .eyebrow,.hanji-scroll .date{color:#85592d}
+.hanji-scroll .container{padding-top:55px;padding-bottom:55px}
+.hanji-scroll h1,.hanji-scroll h2,.hanji-scroll h3,.hanji-scroll p,.hanji-scroll .lead{color:#3d3025}
+.hanji-scroll .muted,.hanji-scroll .hero-studio-line{color:#705e4b}
+.hanji-scroll .section-header{border-color:#a28a6966}
+.hanji-scroll .hero-v3{background:#e5d4b8a0;border-bottom:1px solid #ab906a80}
+.hanji-scroll .hero-game-description{color:#473526}
+.hanji-scroll .hero-info .btn.alt,.hanji-scroll .btn.alt{color:#4b3523;border-color:#84633e}
+.hanji-scroll .btn{background:#79532f;color:#f9eddb;border-color:#654527}
+.hanji-scroll .card,.hanji-scroll .event{background:#f3e7d13d;border:1px solid #977c5688;box-shadow:0 2px 9px #5a422214}
+.hanji-scroll .tag{color:#664622;border-color:#98754d}
+.hanji-scroll .timeline{border-color:#99744c}.hanji-scroll .event:before{background:#79532f}
+.hanji-scroll .filter{background:#f2e2c7;color:#503c29;border-color:#a88a62}.hanji-scroll .filter.active{background:#805a36;color:#fff}
+.hanji-scroll footer{background:#bba27a33;border-top:1px solid #a58b66;color:#584634}.hanji-scroll .footer-brand{color:#3c2e21}
+.hanji-scroll .empty,.hanji-scroll .placeholder{background:#d4bf9a88;border-color:#987c57;color:#6b5236}
+.hanji-scroll .hero-controls{color:#fff}.hanji-scroll .hero-controls button{color:#fff}
+.hanji-scroll .hero-info .hero-trailer{color:#78512e}
+.scroll-intro{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none;background:#10151a;animation:scrollIntroOut 1.7s ease-in-out both}
+.intro-paper{height:min(54vh,520px);width:min(68vw,560px);background:#decdab url('assets/hanji-paper.webp') center/480px auto;transform-origin:top;animation:scrollUnroll 1.25s cubic-bezier(.2,.8,.2,1) both;box-shadow:0 14px 25px #0009}
+.intro-top,.intro-bottom{height:22px;width:min(74vw,610px);background:linear-gradient(#3a2417,#b58953 45%,#4c301d);border-radius:15px;z-index:1}
+@keyframes scrollUnroll{from{transform:scaleY(.015)}to{transform:scaleY(1)}}
+@keyframes scrollIntroOut{0%,68%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+@media(max-width:850px){.hanji-scroll{width:calc(100% - 30px);margin:20px auto 40px}.scroll-paper{margin:0 8px}.scroll-roller{height:23px}.scroll-roller:before,.scroll-roller:after{width:13px}.hanji-scroll .links{background:#e4d2b4;top:60px;border:1px solid #a88c65}.hanji-scroll .mobile-toggle{border-color:#907552}.hanji-scroll .container{padding:35px 20px}.hanji-scroll .hero-v3{padding:18px 16px}}
+@media(prefers-reduced-motion:reduce){.scroll-intro{display:none}.hanji-scroll *{scroll-behavior:auto}}
+
+/* v4.1: never show the parchment introduction on narrow smartphones. */
+@media (max-width:767px){.scroll-intro{display:none!important}}
