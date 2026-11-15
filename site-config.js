@@ -18,7 +18,7 @@ window.SITE_CONFIG = {
     },
     {
       "type": "image",
-      "src": "assets/uploads/mwi57nci-9la70u--2026-11-16-030304.png"
+      "src": "assets/uploads/mwi5mty8-ihw70w--2026-11-16-031435.png"
     },
     {
       "type": "image",
