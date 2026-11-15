@@ -1,28 +1,37 @@
 window.SITE_CONFIG = {
   "studioName": "PROJECT M2 STUDIO",
   "tagline": "세 명의 개발자, 하나의 세계.",
-  "studioDescription": "우리는 2024년 9월부터 세 명의 개발자가 한 명의 이탈도 없이 《콩쥐전》을 제작하고 있습니다. 적은 인원으로 무엇을 할 수 없는지가 아니라, 무엇을 만들어낼 수 있는지를 보여주고자 합니다.",
+  "studioDescription": "M2는 2024년 9월부터 세 명의 개발자가 한 명의 이탈도 없이 《콩쥐전》을 제작하고 있습니다. 적은 인원으로 무엇을 할 수 없는지가 아니라, 무엇을 만들어낼 수 있는지를 보여주고자 합니다.",
   "philosophy": "블루프린트 로직과 C++ 프로그래밍은 개발진이 직접 작업했습니다. 필요할 때는 Fab에서 정식 라이선스를 취득한 유료 플러그인을 게임에 맞게 응용했습니다. AI는 제작 효율을 높이기 위해 제한적으로 활용했으며 일부 이미지와 영상 프레임에 응용했습니다. 기술은 가능성을 넓히는 도구이며 창작의 주체는 개발자입니다.",
   "gameTitle": "콩쥐전 | KKONGJI",
   "gameDescription": "조선과 스팀펑크가 결합된 세계를 배경으로 하는 스토리 기반 세미 오픈월드 무쌍 액션 게임.",
   "steamUrl": "",
   "trailerUrl": "",
   "contactEmail": "m2club@m2games.kr",
-  "logo": "assets/m2-logo-transparent.png",
+  "logo": "assets/studio-logo.svg",
   "gameLogo": "assets/game-logo.svg",
-  "heroImage": "assets/hero-clean.svg",
+  "heroImage": "assets/hero.svg",
   "heroSlides": [
-    {"type":"image","src":"assets/screen-1.svg"},
-    {"type":"image","src":"assets/screen-2.svg"},
-    {"type":"image","src":"assets/screen-3.svg"}
+    {
+      "type": "image",
+      "src": "assets/screen-1.svg"
+    },
+    {
+      "type": "image",
+      "src": "assets/screen-2.svg"
+    },
+    {
+      "type": "image",
+      "src": "assets/screen-3.svg"
+    }
   ],
   "heroPoster": "assets/hero-clean.svg",
   "heroAutoRotate": true,
   "heroSlideSeconds": 7,
   "gameImage": "assets/game-cover.svg",
   "gallery": [
-    "assets/screen-1.svg",
-    "assets/screen-2.svg",
+    "assets/uploads/mwi39a3z-u18d2z--2026-11-14-181537.png",
+    "assets/uploads/mwi3j0no-pg8hmh-2.jpg",
     "assets/screen-3.svg"
   ],
   "team": [
@@ -203,7 +212,7 @@ window.SITE_CONFIG = {
   "tools": [
     {
       "category": "소프트웨어",
-      "name": "Unreal Engine",
+      "name": "Unreal Engine, ",
       "purpose": "게임 개발 엔진",
       "status": "사용 도구",
       "image": ""
