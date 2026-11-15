@@ -14,7 +14,7 @@ window.SITE_CONFIG = {
   "heroSlides": [
     {
       "type": "image",
-      "src": "assets/screen-1.svg"
+      "src": "assets/uploads/mwi4s6zs-e1gyn1--2026-11-14-181537.png"
     },
     {
       "type": "image",
