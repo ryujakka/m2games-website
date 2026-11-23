@@ -5,7 +5,7 @@ window.SITE_CONFIG = {
   "philosophy": "블루프린트 로직과 C++ 프로그래밍은 개발진이 직접 작업했습니다. 필요할 때는 Fab에서 정식 라이선스를 취득한 유료 플러그인을 게임에 맞게 응용했습니다. AI는 제작 효율을 높이기 위해 제한적으로 활용했으며 일부 이미지와 영상 프레임에 응용했습니다. 기술은 가능성을 넓히는 도구이며 창작의 주체는 개발자입니다.",
   "gameTitle": "콩쥐전 | KKONGJI",
   "gameDescription": "조선과 스팀펑크가 결합된 세계를 배경으로 하는 스토리 기반 세미 오픈월드 무쌍 액션 게임.",
-  "steamUrl": "",
+  "steamUrl": "https://store.steampowered.com/app/4625440/Kongjijeon/",
   "trailerUrl": "",
   "contactEmail": "m2club@m2games.kr",
   "logo": "assets/studio-logo.svg",
@@ -235,7 +235,16 @@ window.SITE_CONFIG = {
   "characters": [],
   "world": [],
   "press": [],
-  "pages": [],
+  "pages": [
+    {
+      "title": "버그 신",
+      "id": "page-mwlukom3",
+      "description": "",
+      "menu": true,
+      "published": true,
+      "blocks": []
+    }
+  ],
   "menu": [
     "home",
     "studio",
