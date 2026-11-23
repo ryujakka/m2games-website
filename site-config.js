@@ -235,16 +235,7 @@ window.SITE_CONFIG = {
   "characters": [],
   "world": [],
   "press": [],
-  "pages": [
-    {
-      "title": "버그 신",
-      "id": "page-mwlukom3",
-      "description": "",
-      "menu": true,
-      "published": true,
-      "blocks": []
-    }
-  ],
+  "pages": [],
   "menu": [
     "home",
     "studio",
