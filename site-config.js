@@ -36,20 +36,20 @@ window.SITE_CONFIG = {
   ],
   "team": [
     {
-      "name": "유명찬",
-      "role": "담당 분야 입력",
+      "name": "RYU",
+      "role": "프로그래밍, 캐릭터 디자인",
+      "bio": "올림푸스 코리아 광학사업부, 신한은행 캐피탈 종로, 대한항공 F.I.Y ",
+      "image": ""
+    },
+    {
+      "name": "LEE",
+      "role": "VFX, ASSET 프로그래밍",
       "bio": "프로필을 입력해 주세요.",
       "image": ""
     },
     {
-      "name": "이원택",
-      "role": "담당 분야 입력",
-      "bio": "프로필을 입력해 주세요.",
-      "image": ""
-    },
-    {
-      "name": "송창현",
-      "role": "담당 분야 입력",
+      "name": "SONG",
+      "role": "시스템 개발, 프로그래밍",
       "bio": "프로필을 입력해 주세요.",
       "image": ""
     }
@@ -235,7 +235,16 @@ window.SITE_CONFIG = {
   "characters": [],
   "world": [],
   "press": [],
-  "pages": [],
+  "pages": [
+    {
+      "title": "버그 신",
+      "id": "page-mwlukom3",
+      "description": "",
+      "menu": true,
+      "published": true,
+      "blocks": []
+    }
+  ],
   "menu": [
     "home",
     "studio",
