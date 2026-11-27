@@ -229,7 +229,7 @@ window.SITE_CONFIG = {
     {
       "title": "베타 테스트",
       "status": "진행 중",
-      "description": "2026년 11월 베타 버전 테스트 시작"
+      "description": "2026년 12월 베타 버전 테스트 시작"
     }
   ],
   "characters": [],
